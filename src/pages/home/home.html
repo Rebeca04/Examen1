@@ -15,13 +15,16 @@
   <button ion-button block [navPush]="paginaLista">
     Abrir lista dinámica
   </button>
-  <br/>
 
   <button ion-button block (click)="boton3()">
     Mensaje Toast
   </button>
 
   <button *ngIf="mostrarB4" ion-button block >
-    Botón 4
+    Cuaro botón
+  </button>
+
+  <button ion-button block *ngIf="contador%2==0" (click)="boton5()">
+    Quinto botón
   </button>
 </ion-content>
