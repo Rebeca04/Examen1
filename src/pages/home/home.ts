@@ -1,3 +1,4 @@
+import { ListaPage } from './../lista/lista';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -8,6 +9,8 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   contador : number = 0;
+
+  paginaLista: any = ListaPage;
   constructor(public navCtrl: NavController) {
 
   }

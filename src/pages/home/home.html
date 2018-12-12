@@ -8,7 +8,10 @@
 
 <ion-content padding>
   <button block ion-button (click)="boton1()">
-    Primer botón
+    Incrementa contador
   </button>
   <p>{{contador}}</p>
+  <button block ion-button [navPush]="paginaLista">
+    Abrir lista dinámica
+  </button>
 </ion-content>
