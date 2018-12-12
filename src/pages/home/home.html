@@ -7,17 +7,21 @@
 </ion-header>
 
 <ion-content padding>
-  <button block ion-button (click)="boton1()">
+  <button ion-button block (click)="boton1()">
     Incrementa contador
   </button>
   <p>{{contador}}</p>
 
-  <button block ion-button [navPush]="paginaLista">
+  <button ion-button block [navPush]="paginaLista">
     Abrir lista dinámica
   </button>
   <br/>
-  
-  <button block ion-button (click)="boton3()">
+
+  <button ion-button block (click)="boton3()">
     Mensaje Toast
+  </button>
+
+  <button *ngIf="mostrarB4" ion-button block >
+    Botón 4
   </button>
 </ion-content>

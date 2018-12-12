@@ -10,6 +10,7 @@ import { ToastController } from 'ionic-angular';
 export class HomePage {
 
   contador : number = 0;
+  mostrarB4 : boolean = false;
 
   paginaLista: any = ListaPage;
   constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
@@ -18,7 +19,9 @@ export class HomePage {
 
   boton1(){
     this.contador++;
+    if (this.contador>=5) {this.mostrarB4 = true}
   }
+  
   boton3(){
     let toast = this.toastCtrl.create({
       message: 'Rebeca',
@@ -27,4 +30,5 @@ export class HomePage {
     });
     toast.present();
   }
+
 }
