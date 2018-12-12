@@ -7,8 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  contador : number = 0;
   constructor(public navCtrl: NavController) {
 
   }
 
+  boton1(){
+    this.contador++;
+  }
 }
